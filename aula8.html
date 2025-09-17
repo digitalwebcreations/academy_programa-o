@@ -12,7 +12,39 @@
 <h1>Aula 8 - Manipulação de Arquivos</h1>
 </header>
 <section>
-<p>Aprenda a ler, escrever e organizar arquivos através do código, uma habilidade essencial em projetos reais.</p>
+<p>Manipular arquivos é essencial para armazenar dados permanentemente e acessar informações posteriormente.</p>
+
+<h2>Tipos de arquivos</h2>
+<ul>
+<li>Texto (.txt, .csv)</li>
+<li>Planilhas (.xlsx)</li>
+<li>Banco de dados (.db, .sql)</li>
+<li>JSON (.json)</li>
+</ul>
+
+<h2>Exemplo de leitura e escrita</h2>
+<pre>
+# Escrevendo em um arquivo
+arquivo = open("dados.txt", "w")
+arquivo.write("Olá, mundo!")
+arquivo.close()
+
+# Lendo um arquivo
+arquivo = open("dados.txt", "r")
+conteudo = arquivo.read()
+mostrar conteudo
+arquivo.close()
+</pre>
+
+<h2>Boas práticas</h2>
+<ul>
+<li>Fechar sempre os arquivos após o uso.</li>
+<li>Usar blocos try/catch para tratar erros.</li>
+<li>Evitar sobrescrever arquivos importantes sem backup.</li>
+</ul>
+
+<p>Na próxima aula, você aplicará todos os conceitos aprendidos no projeto final de programação.</p>
+
 </section>
 <footer>
 Digital Web Criations - DWC
